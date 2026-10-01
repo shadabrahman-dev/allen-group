@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Allen Group</title>
+  <meta name="description"
+    content="Allen Group is India's pioneer institutional system integrator of 5G & VoLTE Smart Card Pay Phone systems. 100% parent-only whitelisted calling, zero-capex deployment, and instant online recharge.">
+  <meta name="keywords"
+    content="5g smart card pay phone, hostel pay phone, student smart card phone, boarding school calling system, allengroups, allen group, 5g pay phone, ic card pay phone">
+  <meta name="author" content="Allen Group">
+  <link rel="canonical" href="https://www.allengroups.com">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Allen Group">
+  <meta property="og:description"
+    content="Next-generation institutional 5G telephony for boarding schools and residential campuses with 100% parent whitelisting.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.allengroups.com/">
+  <meta property="og:image" content="images/BDX-5.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              950: '#082f49',
+            },
+            dark: {
+              base: '#050b14',
+              surface: '#0a1424',
+              card: 'rgba(12, 24, 43, 0.75)',
+              border: 'rgba(255, 255, 255, 0.08)',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Space Grotesk"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Companion CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+  class="bg-slate-50 text-slate-800 dark:bg-[#050b14] dark:text-slate-100 antialiased selection:bg-sky-500 selection:text-white transition-colors duration-300">
+
+  <!-- Ambient Animated Mesh Gradient Blobs -->
+  <div class="mesh-background" aria-hidden="true">
+    <div class="mesh-blob blob-1"></div>
+    <div class="mesh-blob blob-2"></div>
+    <div class="mesh-blob blob-3"></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ==================== MODERN GLASS NAVBAR ==================== -->
+  <header
+    class="sticky top-0 z-50 backdrop-blur-xl bg-white/85 border-b border-slate-200/80 dark:bg-slate-950/85 dark:border-slate-800/80 transition-colors"
+    id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+      <!-- Brand Logo Container with Generous Spacing -->
+      <a href="#home"
+        class="shrink-0 flex items-center pr-4 sm:pr-6 border-r border-slate-200 dark:border-slate-800/80 mr-3 lg:mr-6 group"
+        aria-label="Allen Group - Back to top">
+        <div class="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-transparent dark:bg-white dark:shadow-[0_0_14px_rgba(255,255,255,0.2)] dark:border dark:border-white/30 transition-all flex items-center shrink-0">
+          <img src="images/logo.png" alt="Allen Group Official Logo"
+            class="h-7 sm:h-8 md:h-[33px] w-auto object-contain transition-transform group-hover:scale-105">
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu (Cleaned: Hardware tour & Simulator removed) -->
+      <nav
+        class="hidden lg:flex items-center gap-3.5 xl:gap-5 text-xs xl:text-sm font-semibold text-slate-600 dark:text-slate-300">
+        <a href="#home"
+          class="nav-item whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Home</a>
+        <a href="#ecosystem"
+          class="nav-item whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Ecosystem</a>
+        <a href="#comparison"
+          class="nav-item whitespace-nowrap text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 font-bold transition-colors">Benchmark</a>
+        <a href="#smart-cards"
+          class="nav-item whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Smart
+          Cards</a>
+        <a href="#calculator"
+          class="nav-item whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Sizing</a>
+        <a href="#gallery"
+          class="nav-item whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Gallery</a>
+        <a href="#faq"
+          class="nav-item whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">FAQ</a>
+        <a href="#contact"
+          class="nav-item whitespace-nowrap hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Right Utility Actions -->
+      <div class="flex items-center gap-2 sm:gap-3 ml-auto lg:ml-0 shrink-0">
+
+        <!-- Custom Language Selector (Icon only button, Google Translate is 100% hidden in background) -->
+        <div class="relative" id="customLangWrapper">
+          <button id="customLangBtn" type="button"
+            class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-slate-100 border border-slate-300 hover:border-sky-500 text-slate-700 hover:text-sky-600 dark:bg-slate-900/80 dark:border-slate-800 dark:hover:border-sky-500/50 dark:text-slate-300 dark:hover:text-sky-400 flex items-center justify-center transition-all shadow-sm shrink-0"
+            aria-expanded="false" aria-label="Select Language" title="Select Language">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3.6 9h16.8M3.6 15h16.8" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                d="M11.5 3a17 17 0 000 18M12.5 3a17 17 0 010 18" />
+            </svg>
+          </button>
+
+          <!-- Custom Dropdown Panel -->
+          <div id="customLangDropdown"
+            class="hidden absolute right-0 mt-2 w-48 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl backdrop-blur-2xl py-2 z-50 max-h-72 overflow-y-auto">
+            <div
+              class="px-3.5 py-1 text-[10px] font-extrabold uppercase tracking-wider text-slate-400 dark:text-slate-500 border-b border-slate-100 dark:border-slate-800/80 mb-1">
+              Select Language
+            </div>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="en" data-name="English">
+              <span>English</span> <span class="text-[10px] text-slate-400">EN</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="hi" data-name="हिन्दी">
+              <span>हिन्दी (Hindi)</span> <span class="text-[10px] text-slate-400">HI</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="ta" data-name="தமிழ்">
+              <span>தமிழ் (Tamil)</span> <span class="text-[10px] text-slate-400">TA</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="te" data-name="తెలుగు">
+              <span>తెలుగు (Telugu)</span> <span class="text-[10px] text-slate-400">TE</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="kn" data-name="ಕನ್ನಡ">
+              <span>ಕನ್ನಡ (Kannada)</span> <span class="text-[10px] text-slate-400">KN</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="ml" data-name="മലയാളം">
+              <span>മലയാളം (Malayalam)</span> <span class="text-[10px] text-slate-400">ML</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="mr" data-name="मराठी">
+              <span>मराठी (Marathi)</span> <span class="text-[10px] text-slate-400">MR</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="gu" data-name="ગુજરાતી">
+              <span>ગુજરાતી (Gujarati)</span> <span class="text-[10px] text-slate-400">GU</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="bn" data-name="বাংলা">
+              <span>বাংলা (Bengali)</span> <span class="text-[10px] text-slate-400">BN</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="pa" data-name="ਪੰਜਾਬੀ">
+              <span>ਪੰਜਾਬੀ (Punjabi)</span> <span class="text-[10px] text-slate-400">PA</span>
+            </button>
+            <button type="button"
+              class="lang-opt w-full text-left px-3.5 py-1.5 text-xs font-semibold flex items-center justify-between hover:bg-sky-50 text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 transition-colors"
+              data-lang="ur" data-name="اردو">
+              <span>اردو (Urdu)</span> <span class="text-[10px] text-slate-400">UR</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button id="themeToggle"
+          class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-slate-100 border border-slate-300 hover:border-sky-500 text-slate-700 hover:text-sky-600 dark:bg-slate-900/80 dark:border-slate-800 dark:hover:border-sky-500/50 dark:text-slate-300 dark:hover:text-sky-400 flex items-center justify-center transition-all shadow-sm shrink-0"
+          aria-label="Toggle theme">
+          <svg class="sun-icon hidden dark:block w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg class="moon-icon block dark:hidden w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact"
+          class="hidden sm:inline-flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-slate-950 font-extrabold px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-sky-500/20 text-xs uppercase tracking-wider transition-all transform hover:-translate-y-0.5 whitespace-nowrap shrink-0">
+          Campus Trial
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="hamburgerBtn"
+          class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-100 border border-slate-300 text-slate-700 dark:bg-slate-900/80 dark:border-slate-800 dark:text-slate-300 flex flex-col justify-center items-center gap-1.5 shrink-0"
+          aria-label="Toggle navigation menu">
+          <span class="w-4 sm:w-5 h-0.5 bg-current transition-all"></span>
+          <span class="w-4 sm:w-5 h-0.5 bg-current transition-all"></span>
+          <span class="w-4 sm:w-5 h-0.5 bg-current transition-all"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-out Drawer -->
+    <div id="mobileDrawer"
+      class="hidden lg:hidden bg-white/95 border-b border-slate-200 text-slate-800 dark:bg-slate-950/95 dark:border-slate-800 dark:text-slate-200 px-6 py-6 backdrop-blur-2xl transition-all">
+      <div class="flex flex-col gap-3 font-semibold">
+        <div
+          class="bg-slate-100 border border-slate-200 dark:bg-slate-900/70 dark:border-slate-800 rounded-xl p-3 mb-2">
+          <label for="mobileLangSelect"
+            class="text-xs font-bold text-slate-500 dark:text-slate-400 block mb-1.5 flex items-center gap-1.5">
+            <span>🌐</span> Select Language:
+          </label>
+          <select id="mobileLangSelect"
+            class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-xs font-bold rounded-lg px-3 py-2 outline-none cursor-pointer">
+            <option value="en" selected>English (Default)</option>
+            <option value="hi">हिन्दी (Hindi)</option>
+            <option value="ta">தமிழ் (Tamil)</option>
+            <option value="te">తెలుగు (Telugu)</option>
+            <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            <option value="ml">മലയാളം (Malayalam)</option>
+            <option value="mr">मराठी (Marathi)</option>
+            <option value="gu">ગુજરાતી (Gujarati)</option>
+            <option value="bn">বাংলা (Bengali)</option>
+            <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+            <option value="ur">اردو (Urdu)</option>
+          </select>
+        </div>
+        <a href="#home"
+          class="drawer-link py-2 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 hover:text-sky-600 dark:hover:text-sky-400">Home</a>
+        <a href="#ecosystem"
+          class="drawer-link py-2 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 hover:text-sky-600 dark:hover:text-sky-400">Ecosystem
+          Overview</a>
+        <a href="#comparison"
+          class="drawer-link py-2 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 text-emerald-600 dark:text-emerald-400 font-bold">Institutional
+          Benchmark</a>
+        <a href="#smart-cards"
+          class="drawer-link py-2 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 hover:text-sky-600 dark:hover:text-sky-400">Smart
+          Cards</a>
+        <a href="#calculator"
+          class="drawer-link py-2 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 hover:text-sky-600 dark:hover:text-sky-400">Campus
+          Capacity Sizing</a>
+        <a href="#gallery"
+          class="drawer-link py-2 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 hover:text-sky-600 dark:hover:text-sky-400">Gallery</a>
+        <a href="#faq"
+          class="drawer-link py-2 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 hover:text-sky-600 dark:hover:text-sky-400">FAQ</a>
+        <a href="#contact"
+          class="drawer-link py-2 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 hover:text-sky-600 dark:hover:text-sky-400">Contact
+          &amp; Book Survey</a>
+
+        <div class="pt-4 flex flex-col gap-2.5">
+          <a href="https://allengroups.net/online-recharge/" target="_blank" rel="noopener noreferrer"
+            class="w-full text-center bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 py-3 rounded-xl font-bold text-sky-600 dark:text-sky-400">
+            ⚡ Online Card Recharge (allengroups.net)
+          </a>
+          <a href="tel:+918098207999"
+            class="w-full text-center bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 py-3 rounded-xl font-bold text-slate-800 dark:text-slate-200">
+            📞 Call Helpline: +91-80982 07999
+          </a>
+          <a href="#contact"
+            class="w-full text-center bg-sky-500 hover:bg-sky-400 text-slate-950 py-3 rounded-xl font-extrabold uppercase text-xs tracking-wider">
+            Request Free Campus Survey
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="relative pt-4 pb-10 sm:py-12 lg:py-16 overflow-hidden" id="home">
+      <!-- Ambient Background Glow Accents -->
+      <div class="absolute top-10 left-1/4 w-96 h-96 bg-sky-400/10 dark:bg-sky-500/15 rounded-full blur-3xl pointer-events-none -z-10" aria-hidden="true"></div>
+      <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-emerald-400/10 dark:bg-emerald-500/15 rounded-full blur-3xl pointer-events-none -z-10" aria-hidden="true"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
+
+          <!-- Hero Left Column (Equal Height with Right Showcase) -->
+          <div class="lg:col-span-7 flex flex-col justify-between h-full">
+            <div class="flex flex-col items-start justify-start">
+              <!-- Pioneer 2008 & 500+ Campuses Trust Badge (Highlighted, Contained & Single Line on Mobile) -->
+              <div
+                class="w-fit inline-flex items-center gap-1.5 sm:gap-2 bg-emerald-500/15 border border-emerald-500/40 dark:bg-emerald-950/50 dark:border-emerald-400/50 pl-1.5 pr-3.5 sm:pl-2 sm:pr-4 py-1.5 rounded-full shadow-[0_2px_12px_rgba(16,185,129,0.2)] dark:shadow-[0_0_18px_rgba(16,185,129,0.25)] mb-5 sm:mb-6 backdrop-blur-md transition-all">
+                <span
+                  class="bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-500 dark:to-teal-400 text-white text-[9.5px] sm:text-[10.5px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm flex items-center gap-1.5 shrink-0">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                  <span>Pioneer Since 2008</span>
+                </span>
+                <span class="text-emerald-900 dark:text-emerald-200 font-extrabold text-[11px] sm:text-xs tracking-tight whitespace-nowrap">
+                  <span class="inline sm:hidden">&bull; 500+ Campuses</span>
+                  <span class="hidden sm:inline">&bull; Trusted Across 500+ Campuses</span>
+                </span>
+              </div>
+
+              <!-- Main Hero Headline -->
+              <h1
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.12] mb-5">
+                Next-Gen <span
+                  class="bg-gradient-to-r from-sky-500 via-emerald-500 to-indigo-500 dark:from-sky-400 dark:via-emerald-400 dark:to-indigo-400 bg-clip-text text-transparent">5G Smart Card Pay Phones</span> for Boarding Schools
+              </h1>
+
+              <!-- Subtitle Description -->
+              <p class="text-base sm:text-lg lg:text-[18px] text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl mb-8">
+                Replace campus smartphone distractions with secure, <strong class="text-slate-900 dark:text-white font-semibold">100% parent-only calling</strong>. Engineered with industrial <strong class="text-slate-900 dark:text-white font-semibold">5G &amp; VoLTE auto-failover</strong> terminals and <strong class="text-emerald-600 dark:text-emerald-400 font-bold">₹0 Capex deployment</strong>.
+              </p>
+
+              <!-- CTA Buttons: Enterprise-Grade, Professional & Fully Responsive -->
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 w-full sm:w-auto">
+                <!-- Primary Button: Book Free Campus Trial -->
+                <a href="#contact"
+                  class="group w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 hover:from-sky-400 hover:via-blue-500 hover:to-indigo-500 text-white font-bold text-sm sm:text-base px-6 sm:px-7 py-3.5 rounded-xl shadow-lg shadow-sky-500/25 hover:shadow-xl hover:shadow-sky-500/35 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 border border-sky-400/30 whitespace-nowrap">
+                  <span>Book Free Campus Trial</span>
+                  <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+
+                <!-- Secondary Button: Online Student Recharge -->
+                <a href="https://allengroups.net/online-recharge/" target="_blank" rel="noopener noreferrer"
+                  class="group w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 text-slate-800 dark:text-slate-100 font-bold text-sm sm:text-base px-6 sm:px-7 py-3.5 rounded-xl shadow-sm hover:shadow transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
+                  <svg class="w-4 h-4 text-amber-500 dark:text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Online Student Recharge</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Metrics Bar (Docked at bottom, perfectly aligned with right showcase) -->
+            <div
+              class="grid grid-cols-3 gap-4 sm:gap-8 pt-7 sm:pt-9 border-t border-slate-200/90 dark:border-slate-800/90 w-full mt-10 lg:mt-auto">
+              <div>
+                <span
+                  class="block text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 dark:text-white font-heading tracking-tight">500+</span>
+                <span class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Boarding Campuses</span>
+              </div>
+              <div>
+                <span
+                  class="block text-2xl sm:text-3xl lg:text-4xl font-black text-sky-600 dark:text-sky-400 font-heading tracking-tight">99.99%</span>
+                <span class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">5G &amp; VoLTE Uptime</span>
+              </div>
+              <div>
+                <span
+                  class="block text-2xl sm:text-3xl lg:text-4xl font-black text-emerald-600 dark:text-emerald-400 font-heading tracking-tight">₹0
+                  Capex</span>
+                <span class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">Free Installation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: 3D Hardware Pedestal Showcase (Equal Height with Left Column) -->
+          <div class="lg:col-span-5 flex items-stretch">
+            <div
+              class="relative w-full h-full min-h-[500px] lg:min-h-[560px] bg-gradient-to-b from-white/95 via-sky-50/40 to-slate-100/90 border border-slate-200/90 shadow-[0_20px_50px_-15px_rgba(14,165,233,0.18)] dark:bg-gradient-to-b dark:from-slate-900/90 dark:via-[#0a1628] dark:to-slate-950/95 dark:border-sky-500/30 dark:shadow-[0_20px_50px_-15px_rgba(56,189,248,0.25)] rounded-3xl p-6 sm:p-7 md:p-8 backdrop-blur-2xl flex flex-col justify-between items-center overflow-hidden transition-all">
+
+              <!-- Vibrant Multi-layer Ambient Glow behind Device -->
+              <div
+                class="absolute -top-10 left-1/2 -translate-x-1/2 w-80 h-80 bg-gradient-to-b from-sky-400/20 via-emerald-400/15 to-transparent dark:from-sky-500/25 dark:via-emerald-500/20 dark:to-blue-600/15 rounded-full blur-3xl pointer-events-none"
+                aria-hidden="true"></div>
+
+              <!-- Live Status Pill (5G Active) -->
+              <div
+                class="inline-flex items-center gap-2 bg-sky-50/95 border border-sky-400/50 text-sky-700 dark:bg-slate-950/95 dark:border-sky-500/50 dark:text-sky-400 font-mono text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-sky-500/15 z-10 shrink-0">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse"></span>
+                <span>NEXT-GEN 5G &bull; VoLTE ACTIVE</span>
+              </div>
+
+              <!-- Next-Gen 5G Calling Device Image (Prominent Flagship Hardware Height) -->
+              <div class="relative z-10 my-auto py-3 transition-transform duration-500 hover:scale-105 flex flex-col items-center justify-center flex-1">
+                <img src="images/BDX-5.png" alt="Allen Group Next-Gen 5G Smart Card Calling Terminal"
+                  class="h-52 sm:h-64 md:h-72 lg:h-[280px] xl:h-[305px] w-auto object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.22)] dark:drop-shadow-[0_22px_40px_rgba(56,189,248,0.35)] filter transition-all">
+                <!-- Grounding Pedestal Reflection / Shadow -->
+                <div class="w-40 sm:w-48 h-3.5 bg-slate-400/20 dark:bg-black/60 rounded-full blur-sm mx-auto -mt-1 pointer-events-none"></div>
+              </div>
+
+              <!-- Spec Micro-Chips (Modern 2x2 Grid) -->
+              <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-auto z-10 shrink-0">
+                <div
+                  class="flex items-center gap-2.5 bg-white/90 border border-slate-200/90 text-slate-700 dark:bg-slate-900/90 dark:border-slate-800/80 dark:text-slate-300 rounded-xl p-2.5 text-xs shadow-sm hover:border-sky-500/40 transition-colors">
+                  <span class="text-base">🛡️</span>
+                  <div>
+                    <strong class="text-slate-900 dark:text-white block font-semibold text-[11px] leading-tight">Vandal-Proof Steel</strong>
+                    <span class="text-slate-500 dark:text-slate-400 text-[10px]">Cold-rolled &bull; 10+ yr life</span>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center gap-2.5 bg-white/90 border border-slate-200/90 text-slate-700 dark:bg-slate-900/90 dark:border-slate-800/80 dark:text-slate-300 rounded-xl p-2.5 text-xs shadow-sm hover:border-sky-500/40 transition-colors">
+                  <img src="https://allengroups.com/wp-content/uploads/2017/03/3.jpg" alt="Smart Card"
+                    class="w-6 h-4 object-cover rounded border border-slate-300 dark:border-slate-700 shrink-0">
+                  <div>
+                    <strong class="text-slate-900 dark:text-white block font-semibold text-[11px] leading-tight">Reusable Smart IC</strong>
+                    <span class="text-slate-500 dark:text-slate-400 text-[10px]">Contactless &bull; Online top-up</span>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center gap-2.5 bg-white/90 border border-slate-200/90 text-slate-700 dark:bg-slate-900/90 dark:border-slate-800/80 dark:text-slate-300 rounded-xl p-2.5 text-xs shadow-sm hover:border-sky-500/40 transition-colors">
+                  <span class="text-base">🔒</span>
+                  <div>
+                    <strong class="text-slate-900 dark:text-white block font-semibold text-[11px] leading-tight">100% Parent Whitelist</strong>
+                    <span class="text-slate-500 dark:text-slate-400 text-[10px]">Zero unauthorized calls</span>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center gap-2.5 bg-white/90 border border-slate-200/90 text-slate-700 dark:bg-slate-900/90 dark:border-slate-800/80 dark:text-slate-300 rounded-xl p-2.5 text-xs shadow-sm hover:border-sky-500/40 transition-colors">
+                  <span class="text-base">📶</span>
+                  <div>
+                    <strong class="text-slate-900 dark:text-white block font-semibold text-[11px] leading-tight">Dual 5G &amp; VoLTE</strong>
+                    <span class="text-slate-500 dark:text-slate-400 text-[10px]">Auto-failover &bull; HD Voice</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BENTO GRID: ECOSYSTEM ==================== -->
+    <section
+      class="py-10 sm:py-12 bg-slate-100/70 border-y border-slate-200 dark:bg-slate-950/60 dark:border-slate-800/70 relative transition-colors"
+      id="ecosystem">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+          <span
+            class="inline-block bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/25 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+            COMPLETE INSTITUTIONAL ECOSYSTEM
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
+            Engineered for Absolute Boarding School Peace of Mind
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            Say goodbye to chaotic mobile phone raids, broken intercom wires, and manual hostel register logs.
+          </p>
+        </div>
+
+        <!-- 2026 Modern Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Bento 1: Large Span 2 Card (Parent Whitelist) -->
+          <div
+            class="md:col-span-2 bg-white border border-slate-200/90 shadow-xl shadow-slate-200/50 hover:border-sky-500/50 dark:bg-gradient-to-br dark:from-slate-900/90 dark:to-slate-950/90 dark:border-slate-800/80 dark:shadow-none dark:hover:border-sky-500/40 rounded-3xl p-7 sm:p-9 backdrop-blur-xl transition-all flex flex-col justify-between group">
+            <div>
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 text-sky-600 dark:text-sky-400 flex items-center justify-center text-xl mb-5">
+                🔒
+              </div>
+              <span
+                class="text-sky-600 dark:text-sky-400 text-xs font-extrabold uppercase tracking-wider block mb-2">PROPRIETARY
+                CALL FILTER ENGINE</span>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">100% Parent-Only Whitelisted Calling
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-2xl">
+                Every student smart card is mapped strictly to pre-approved parent/guardian numbers registered with
+                school administration. Students cannot dial friend mobiles, unapproved outsiders, or commercial gaming
+                lines.
+              </p>
+            </div>
+
+            <!-- Visual Flowchart -->
+            <div
+              class="mt-8 bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-950/80 dark:border-slate-800/90 dark:text-slate-200 rounded-2xl p-4 flex flex-wrap items-center justify-between gap-3 text-xs">
+              <div
+                class="bg-white border border-slate-300 dark:bg-slate-900 dark:border-slate-700 px-3.5 py-2 rounded-xl font-bold flex items-center gap-2 shadow-sm">
+                <span>🎓</span> Student Smart Card
+              </div>
+              <div class="text-emerald-600 dark:text-emerald-400 font-extrabold flex items-center gap-1">
+                <span>➔</span> Verified Whitelist
+              </div>
+              <div
+                class="bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 px-3.5 py-2 rounded-xl font-bold flex items-center gap-2">
+                <span>👨‍👩‍👧</span> Approved Parents Only
+              </div>
+              <div
+                class="bg-rose-500/10 border border-rose-500/30 text-rose-600 dark:text-rose-400 px-3.5 py-2 rounded-xl font-bold flex items-center gap-1">
+                <span>⛔</span> All Other Numbers Blocked
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 2: Zero Capex Free Installation -->
+          <div
+            class="bg-white border border-slate-200/90 shadow-xl shadow-slate-200/50 hover:border-emerald-500/50 dark:bg-gradient-to-br dark:from-slate-900/90 dark:to-slate-950/90 dark:border-slate-800/80 dark:shadow-none dark:hover:border-emerald-500/40 rounded-3xl p-7 sm:p-9 backdrop-blur-xl transition-all flex flex-col justify-between group">
+            <div>
+              <div
+                class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl mb-5">
+                🆓
+              </div>
+              <span
+                class="text-emerald-600 dark:text-emerald-400 text-xs font-extrabold uppercase tracking-wider block mb-2">ZERO
+                CAPITAL EXPENSE</span>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Free Campus Installation &amp; Zero
+                Capex</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Qualifying residential schools receive Next-Gen 5G terminals, signal booster antennas, and full cabling
+                with <strong>zero upfront equipment cost</strong>.
+              </p>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-slate-200 dark:border-slate-800/60">
+              <span class="text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 block font-heading">₹0
+                Upfront</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">Terminals, cabling &amp; RF survey provided
+                free</span>
+            </div>
+          </div>
+
+          <!-- Bento 3: Dual 5G & VoLTE Carrier Failover -->
+          <div
+            class="bg-white border border-slate-200/90 shadow-xl shadow-slate-200/50 hover:border-purple-500/50 dark:bg-gradient-to-br dark:from-slate-900/90 dark:to-slate-950/90 dark:border-slate-800/80 dark:shadow-none dark:hover:border-purple-500/40 rounded-3xl p-7 sm:p-9 backdrop-blur-xl transition-all flex flex-col justify-between group">
+            <div>
+              <div
+                class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-600 dark:text-purple-400 flex items-center justify-center text-xl mb-5">
+                📶
+              </div>
+              <span
+                class="text-purple-600 dark:text-purple-400 text-xs font-extrabold uppercase tracking-wider block mb-2">INDUSTRIAL
+                CELLULAR MODEM</span>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Dual 5G &amp; VoLTE Carrier Failover
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Never suffer from severed intercom cables or network deadzones. Our multi-carrier industrial 5G engine
+                automatically failovers between national telecom networks for crystal-clear HD calling even in remote
+                hilly boarding campuses.
+              </p>
+            </div>
+
+            <div
+              class="mt-8 flex items-center gap-2 bg-slate-50 border border-slate-200 dark:bg-slate-950/60 dark:border-slate-800/80 p-3 rounded-xl">
+              <div class="flex items-end gap-1 h-5">
+                <span class="w-1 h-2 bg-purple-500 dark:bg-purple-400 rounded-sm"></span>
+                <span class="w-1 h-3 bg-purple-500 dark:bg-purple-400 rounded-sm"></span>
+                <span class="w-1 h-4 bg-purple-500 dark:bg-purple-400 rounded-sm"></span>
+                <span class="w-1 h-5 bg-purple-500 dark:bg-purple-400 rounded-sm"></span>
+              </div>
+              <span class="text-xs text-purple-700 dark:text-purple-300 font-semibold ml-2">Ultra-Low Latency 5G Signal
+                Locked</span>
+            </div>
+          </div>
+
+          <!-- Bento 4: Automated Curfew Engine -->
+          <div
+            class="bg-white border border-slate-200/90 shadow-xl shadow-slate-200/50 hover:border-amber-500/50 dark:bg-gradient-to-br dark:from-slate-900/90 dark:to-slate-950/90 dark:border-slate-800/80 dark:shadow-none dark:hover:border-amber-500/40 rounded-3xl p-7 sm:p-9 backdrop-blur-xl transition-all flex flex-col justify-between group">
+            <div>
+              <div
+                class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl mb-5">
+                ⏰
+              </div>
+              <span
+                class="text-amber-600 dark:text-amber-400 text-xs font-extrabold uppercase tracking-wider block mb-2">AUTOMATED
+                DISCIPLINE</span>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Curfew &amp; Study-Hour Lockout</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Terminals automatically shut off during study hours and late nights (e.g. 9:30 PM &ndash; 6:00 AM) based
+                on your school's schedule. Zero warden supervision needed.
+              </p>
+            </div>
+
+            <div
+              class="mt-8 bg-slate-50 border border-slate-200 dark:bg-slate-950/60 dark:border-slate-800/80 p-3 rounded-xl text-xs flex justify-between text-slate-600 dark:text-slate-400">
+              <span>Study Hours: <strong class="text-rose-500 dark:text-rose-400">Locked</strong></span>
+              <span>Evening: <strong class="text-emerald-600 dark:text-emerald-400">Active</strong></span>
+              <span>Night: <strong class="text-rose-500 dark:text-rose-400">Curfew</strong></span>
+            </div>
+          </div>
+
+          <!-- Bento 5: Instant Online Recharge Portal -->
+          <div
+            class="bg-white border border-slate-200/90 shadow-xl shadow-slate-200/50 hover:border-sky-500/50 dark:bg-gradient-to-br dark:from-slate-900/90 dark:to-slate-950/90 dark:border-slate-800/80 dark:shadow-none dark:hover:border-sky-500/40 rounded-3xl p-7 sm:p-9 backdrop-blur-xl transition-all flex flex-col justify-between group">
+            <div>
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 text-sky-600 dark:text-sky-400 flex items-center justify-center text-xl mb-5">
+                ⚡
+              </div>
+              <span
+                class="text-sky-600 dark:text-sky-400 text-xs font-extrabold uppercase tracking-wider block mb-2">CONVENIENT
+                FOR PARENTS</span>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Instant Top-Up at allengroups.net</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Parents recharge their student's card directly from any smartphone using UPI (Google Pay, PhonePe,
+                Paytm), Cards, or Netbanking. Balance updates in real-time.
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <a href="https://allengroups.net/online-recharge/" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 font-bold text-xs transition-colors">
+                <span>Open allengroups.net/online-recharge</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==================== INSTITUTIONAL BENCHMARK (COMPARISON) SECTION ==================== -->
+    <section
+      class="py-10 sm:py-12 bg-slate-100/90 border-y border-slate-200 dark:bg-gradient-to-b dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:border-slate-800/80 relative transition-colors"
+      id="comparison">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+          <div
+            class="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-3 shadow-sm">
+            ⭐ OFFICIAL INSTITUTIONAL BENCHMARK
+          </div>
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-3 font-heading">
+            Experience You Can Trust
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+            Proven communication solutions trusted across boarding schools, residential campuses, <strong>JNV &amp; Sainik Schools Nationwide</strong>.
+          </p>
+        </div>
+
+        <!-- Seamless Embedded Benchmark Display (No Zoom, No Lightbox, Native Panel Look) -->
+        <div
+          class="relative max-w-5xl mx-auto rounded-3xl overflow-hidden border border-slate-200/90 dark:border-slate-800/90 bg-white dark:bg-slate-950/80 shadow-2xl shadow-slate-300/40 dark:shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
+          <img src="images/compare.png"
+            alt="Allen Group Official Institutional Comparison - Proven in JNV and Sainik Schools"
+            class="w-full h-auto object-contain block select-none pointer-events-none"
+            id="compareGraphic">
+        </div>
+
+        <!-- Bottom Action CTA -->
+        <div class="text-center mt-8">
+          <a href="#contact"
+            class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-extrabold px-8 py-3.5 rounded-xl shadow-xl shadow-emerald-500/20 text-sm transition-all transform hover:-translate-y-0.5">
+            <span>Schedule Free Campus Survey &amp; Trial</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== REUSABLE SMART CARDS ==================== -->
+    <section class="py-10 sm:py-12 relative transition-colors" id="smart-cards">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          <!-- Card Image Provided by User -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div
+              class="relative max-w-sm rounded-3xl p-6 bg-white border border-slate-200 shadow-xl dark:bg-slate-900/60 dark:border-slate-800/80 backdrop-blur-xl flex flex-col items-center transition-colors">
+              <img src="https://allengroups.com/wp-content/uploads/2017/03/3.jpg"
+                alt="Official Allen Group Reusable Student Smart IC Card"
+                class="w-full h-auto object-cover rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300">
+              <div
+                class="mt-4 inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-full text-xs font-bold">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 dark:bg-emerald-400"></span>
+                Encrypted Smart IC Card
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Benefits Stack -->
+          <div class="lg:col-span-7">
+            <span
+              class="inline-block bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/25 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+              STUDENT WALLET SYSTEM
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
+              Reusable Smart IC Cards for Every Student
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 text-base mb-6">
+              Personalized, encrypted Smart Cards issued to each student, mapped strictly to their verified family
+              contacts.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              <div
+                class="flex items-start gap-4 bg-white border border-slate-200 shadow-sm dark:bg-slate-900/40 dark:border-slate-800/60 p-4 rounded-2xl transition-colors">
+                <div
+                  class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-600 dark:text-sky-400 font-heading font-bold text-sm flex items-center justify-center shrink-0">
+                  01
+                </div>
+                <div>
+                  <strong class="text-slate-900 dark:text-white text-base font-semibold block mb-1">Balance Protected on
+                    Institutional Cloud</strong>
+                  <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm">Money is stored safely on the cloud
+                    server. If a card is misplaced, it is locked instantly and balance transfers to a new card.</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-4 bg-white border border-slate-200 shadow-sm dark:bg-slate-900/40 dark:border-slate-800/60 p-4 rounded-2xl transition-colors">
+                <div
+                  class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-600 dark:text-sky-400 font-heading font-bold text-sm flex items-center justify-center shrink-0">
+                  02
+                </div>
+                <div>
+                  <strong class="text-slate-900 dark:text-white text-base font-semibold block mb-1">Instant 24×7 Online
+                    Top-Up</strong>
+                  <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm">Parents recharge directly via <a
+                      href="https://allengroups.net/online-recharge/" target="_blank" rel="noopener noreferrer"
+                      class="text-sky-600 dark:text-sky-400 underline font-semibold">allengroups.net</a> using UPI,
+                    Cards, or Netbanking with automated SMS alerts.</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-4 bg-white border border-slate-200 shadow-sm dark:bg-slate-900/40 dark:border-slate-800/60 p-4 rounded-2xl transition-colors">
+                <div
+                  class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-600 dark:text-sky-400 font-heading font-bold text-sm flex items-center justify-center shrink-0">
+                  03
+                </div>
+                <div>
+                  <strong class="text-slate-900 dark:text-white text-base font-semibold block mb-1">Multi-Year
+                    Durability</strong>
+                  <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm">Heavy-duty composite plastic resists
+                    drops, moisture, and daily student pocket friction across entire multi-year academic terms.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+              <a href="#contact"
+                class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition-colors shadow-md">
+                Order School Smart Cards
+              </a>
+              <a href="https://allengroups.net/online-recharge/" target="_blank" rel="noopener noreferrer"
+                class="bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 dark:border-transparent dark:text-white font-semibold px-6 py-3 rounded-xl text-xs transition-colors">
+                Parent Recharge Portal
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==================== CAMPUS CAPACITY CALCULATOR ==================== -->
+    <section class="py-10 sm:py-12 relative transition-colors" id="calculator">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+          <span
+            class="inline-block bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/25 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+            PLANNING TOOL
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
+            Campus Sizing &amp; Capacity Calculator
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            Estimate the ideal terminal count and calling throughput required for your hostel blocks.
+          </p>
+        </div>
+
+        <div
+          class="max-w-4xl mx-auto bg-white border border-slate-200 shadow-2xl dark:bg-slate-900/70 dark:border-slate-800 rounded-3xl p-6 sm:p-10 backdrop-blur-2xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center transition-colors">
+
+          <!-- Sliders -->
+          <div class="md:col-span-7 space-y-6">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="calcStudents" class="text-sm font-bold text-slate-900 dark:text-white">Total Hostel
+                  Students:</label>
+                <span class="text-sky-600 dark:text-sky-400 font-heading font-bold text-base" id="calcStudentsVal">600
+                  Students</span>
+              </div>
+              <input type="range" id="calcStudents" min="50" max="3000" step="25" value="600"
+                class="w-full cursor-pointer">
+              <div class="flex justify-between text-[11px] text-slate-500 mt-1 font-medium">
+                <span>50</span>
+                <span>750</span>
+                <span>1,500</span>
+                <span>3,000+</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="calcBlocks" class="text-sm font-bold text-slate-900 dark:text-white">Hostel Blocks /
+                  Wings:</label>
+                <span class="text-sky-600 dark:text-sky-400 font-heading font-bold text-base" id="calcBlocksVal">4
+                  Blocks</span>
+              </div>
+              <input type="range" id="calcBlocks" min="1" max="15" step="1" value="4" class="w-full cursor-pointer">
+              <div class="flex justify-between text-[11px] text-slate-500 mt-1 font-medium">
+                <span>1 Block</span>
+                <span>5 Blocks</span>
+                <span>10 Blocks</span>
+                <span>15 Blocks</span>
+              </div>
+            </div>
+
+            <div
+              class="bg-slate-50 border border-slate-200 text-slate-600 dark:bg-slate-950/70 dark:border-slate-800/80 dark:text-slate-400 p-3.5 rounded-xl text-xs">
+              💡 <strong>Sizing Rule:</strong> 1 5G Smart Terminal per 60–75 students ensures smooth flow during evening
+              hours with zero queue congestion.
+            </div>
+          </div>
+
+          <!-- Sizing Output -->
+          <div
+            class="md:col-span-5 bg-slate-50 border border-slate-200 shadow-md dark:bg-slate-950/80 dark:border-slate-800 rounded-2xl p-6 flex flex-col gap-4 text-center transition-colors">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Recommended 5G
+              Terminals</h4>
+            <div>
+              <span class="text-4xl sm:text-5xl font-extrabold text-sky-600 dark:text-sky-400 font-heading block"
+                id="outTerminals">8 Units</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">Distributed across your campus</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 text-left pt-2 border-t border-slate-200 dark:border-slate-800 text-xs">
+              <div
+                class="bg-white border border-slate-200 dark:bg-slate-900/60 dark:border-slate-800 p-2.5 rounded-lg shadow-sm">
+                <span class="text-slate-500 dark:text-slate-400 block text-[11px]">Peak Throughput</span>
+                <strong class="text-slate-900 dark:text-white font-bold" id="outCapacity">144 Calls/Hr</strong>
+              </div>
+              <div
+                class="bg-white border border-slate-200 dark:bg-slate-900/60 dark:border-slate-800 p-2.5 rounded-lg shadow-sm">
+                <span class="text-slate-500 dark:text-slate-400 block text-[11px]">Calling Window</span>
+                <strong class="text-slate-900 dark:text-white font-bold" id="outWindow">2.0 Hours</strong>
+              </div>
+              <div
+                class="bg-white border border-slate-200 dark:bg-slate-900/60 dark:border-slate-800 p-2.5 rounded-lg shadow-sm">
+                <span class="text-slate-500 dark:text-slate-400 block text-[11px]">Upfront Capex</span>
+                <strong class="text-emerald-600 dark:text-emerald-400 font-bold">₹0 (Zero Capex)</strong>
+              </div>
+              <div
+                class="bg-white border border-slate-200 dark:bg-slate-900/60 dark:border-slate-800 p-2.5 rounded-lg shadow-sm">
+                <span class="text-slate-500 dark:text-slate-400 block text-[11px]">Warden Saved</span>
+                <strong class="text-slate-900 dark:text-white font-bold" id="outHours">90+ Hrs/Mo</strong>
+              </div>
+            </div>
+
+            <a href="#contact"
+              class="w-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold py-3 rounded-xl text-xs uppercase tracking-wider transition-colors mt-2 shadow-md">
+              Request Campus Deployment Plan
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INSTALLATION GALLERY ==================== -->
+    <section
+      class="py-10 sm:py-12 bg-slate-100/70 border-y border-slate-200 dark:bg-slate-950/40 dark:border-slate-800/80 relative transition-colors"
+      id="gallery">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+          <span
+            class="inline-block bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/25 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+            PROVEN TRACK RECORD
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
+            Operational Across Indian Boarding Schools
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            Real installations across residential schools, boys and girls hostels, and educational campuses. Click any
+            image for a larger preview.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="gallery-item-card lg:col-span-2 relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 aspect-video group cursor-pointer shadow-md"
+            data-caption="Allen Group Next-Gen 5G Calling Terminal">
+            <img src="images/BDX-5.png" alt="Next-Gen 5G Hardware"
+              class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex flex-col justify-end p-5 text-white">
+              <h4 class="font-bold text-base">Next-Gen 5G Calling Terminal</h4>
+              <p class="text-xs text-slate-300">Ultra-HD Voice &bull; 5G Smart Card System</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item-card relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 aspect-video sm:aspect-auto group cursor-pointer shadow-md"
+            data-caption="Official Reusable Student Smart IC Card">
+            <img src="https://allengroups.com/wp-content/uploads/2017/03/3.jpg" alt="Student Smart Card"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex flex-col justify-end p-5 text-white">
+              <h4 class="font-bold text-base">Reusable Smart IC Card</h4>
+              <p class="text-xs text-slate-300">Encrypted Student Wallet</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item-card relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 aspect-video sm:aspect-auto group cursor-pointer shadow-md"
+            data-caption="High-Capacity Multi-Line 5G Station">
+            <img src="https://www.allengroups.com/wp-content/uploads/2024/08/BDX-6.png" alt="Multi-Line 5G Station"
+              class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex flex-col justify-end p-5 text-white">
+              <h4 class="font-bold text-base">Multi-Line 5G Station</h4>
+              <p class="text-xs text-slate-300">High-capacity residential unit</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item-card relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 aspect-video sm:aspect-auto group cursor-pointer shadow-md"
+            data-caption="Active Hostel Corridor Calling Unit">
+            <img src="http://allengroups.com/wp-content/uploads/2018/10/small-1.jpg" alt="Hostel Corridor Unit"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex flex-col justify-end p-5 text-white">
+              <h4 class="font-bold text-base">Hostel Corridor Unit</h4>
+              <p class="text-xs text-slate-300">Residential hallway setup</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item-card relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 aspect-video sm:aspect-auto group cursor-pointer shadow-md"
+            data-caption="Student speaking with parents during evening calling hours">
+            <img src="http://allengroups.com/wp-content/uploads/2018/10/small-2.jpg" alt="Student Calling"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex flex-col justify-end p-5 text-white">
+              <h4 class="font-bold text-base">Parental Calling Hours</h4>
+              <p class="text-xs text-slate-300">Reliable student connection</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 sm:py-12 relative transition-colors" id="faq">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+          <span
+            class="inline-block bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/25 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+            FREQUENT QUESTIONS
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base">
+            Clear information for school management, principals, trustees, and hostel administrators.
+          </p>
+        </div>
+
+        <div class="space-y-3.5">
+          <div
+            class="faq-item-box bg-white border border-slate-200 shadow-sm dark:bg-slate-900/60 dark:border-slate-800 rounded-2xl overflow-hidden transition-colors">
+            <button
+              class="faq-btn w-full text-left p-5 sm:p-6 font-bold text-slate-900 dark:text-white flex justify-between items-center gap-4 text-sm sm:text-base"
+              aria-expanded="false">
+              <span>How does the Zero-Capex / Free Installation model work?</span>
+              <span class="text-sky-600 dark:text-sky-400 text-xl font-light shrink-0">+</span>
+            </button>
+            <div
+              class="faq-drawer hidden px-5 pb-5 sm:px-6 sm:pb-6 text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Allen Group provides and installs Next-Gen 5G and VoLTE terminals, antenna boosters, and cabling with
+              <strong>zero upfront equipment cost</strong> for qualifying residential schools. Services are sustained
+              via nominal calling usage recharged by parents. There are no surprise hardware purchase bills for the
+              school.
+            </div>
+          </div>
+
+          <div
+            class="faq-item-box bg-white border border-slate-200 shadow-sm dark:bg-slate-900/60 dark:border-slate-800 rounded-2xl overflow-hidden transition-colors">
+            <button
+              class="faq-btn w-full text-left p-5 sm:p-6 font-bold text-slate-900 dark:text-white flex justify-between items-center gap-4 text-sm sm:text-base"
+              aria-expanded="false">
+              <span>Can students dial any mobile number or only approved parent numbers?</span>
+              <span class="text-sky-600 dark:text-sky-400 text-xl font-light shrink-0">+</span>
+            </button>
+            <div
+              class="faq-drawer hidden px-5 pb-5 sm:px-6 sm:pb-6 text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+              <strong>100% Parent/Guardian Whitelist Only.</strong> Each student card is mapped strictly to verified
+              parent phone numbers registered with school administration. Students cannot dial unapproved numbers,
+              gaming hotlines, or friend numbers.
+            </div>
+          </div>
+
+          <div
+            class="faq-item-box bg-white border border-slate-200 shadow-sm dark:bg-slate-900/60 dark:border-slate-800 rounded-2xl overflow-hidden transition-colors">
+            <button
+              class="faq-btn w-full text-left p-5 sm:p-6 font-bold text-slate-900 dark:text-white flex justify-between items-center gap-4 text-sm sm:text-base"
+              aria-expanded="false">
+              <span>Can we prevent calls during study hours and late nights?</span>
+              <span class="text-sky-600 dark:text-sky-400 text-xl font-light shrink-0">+</span>
+            </button>
+            <div
+              class="faq-drawer hidden px-5 pb-5 sm:px-6 sm:pb-6 text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Yes. The institutional administrator configures the curfew schedule. Terminals automatically lock during
+              mandatory study hours and late nights (e.g., 9:30 PM to 6:00 AM).
+            </div>
+          </div>
+
+          <div
+            class="faq-item-box bg-white border border-slate-200 shadow-sm dark:bg-slate-900/60 dark:border-slate-800 rounded-2xl overflow-hidden transition-colors">
+            <button
+              class="faq-btn w-full text-left p-5 sm:p-6 font-bold text-slate-900 dark:text-white flex justify-between items-center gap-4 text-sm sm:text-base"
+              aria-expanded="false">
+              <span>How do parents recharge the student's Smart Card?</span>
+              <span class="text-sky-600 dark:text-sky-400 text-xl font-light shrink-0">+</span>
+            </button>
+            <div
+              class="faq-drawer hidden px-5 pb-5 sm:px-6 sm:pb-6 text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Parents can recharge anytime 24×7 from their smartphones via our official portal at <a
+                href="https://allengroups.net/online-recharge/" target="_blank" rel="noopener noreferrer"
+                class="text-sky-600 dark:text-sky-400 underline font-semibold">allengroups.net/online-recharge</a> using
+              UPI (Google Pay, PhonePe, Paytm), Cards, or Netbanking. Balance updates immediately.
+            </div>
+          </div>
+
+          <div
+            class="faq-item-box bg-white border border-slate-200 shadow-sm dark:bg-slate-900/60 dark:border-slate-800 rounded-2xl overflow-hidden transition-colors">
+            <button
+              class="faq-btn w-full text-left p-5 sm:p-6 font-bold text-slate-900 dark:text-white flex justify-between items-center gap-4 text-sm sm:text-base"
+              aria-expanded="false">
+              <span>Who handles maintenance, spare parts, and machine repairs?</span>
+              <span class="text-sky-600 dark:text-sky-400 text-xl font-light shrink-0">+</span>
+            </button>
+            <div
+              class="faq-drawer hidden px-5 pb-5 sm:px-6 sm:pb-6 text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Allen Group provides complete end-to-end on-ground maintenance. Unlike third-party resellers who demand
+              that you courier broken machines, our regional service engineers visit your institution and repair or
+              replace any malfunctioning units free of charge.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT & SURVEY BOOKING ==================== -->
+    <section
+      class="py-10 sm:py-12 bg-slate-100/70 border-t border-slate-200 dark:bg-slate-950/60 dark:border-slate-800/80 relative transition-colors"
+      id="contact">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+          <span
+            class="inline-block bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/25 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+            GET IN TOUCH
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
+            Request a Free Campus Survey &amp; Trial
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base">
+            Our engineers will inspect your campus cellular signal and demonstrate the 5G calling system at your
+            premises.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+          <!-- Contact Details -->
+          <div
+            class="lg:col-span-5 bg-white border border-slate-200 shadow-xl dark:bg-slate-900/70 dark:border-slate-800 rounded-3xl p-7 sm:p-9 backdrop-blur-xl flex flex-col justify-between transition-colors">
+            <div class="space-y-6">
+              <div>
+                <span
+                  class="text-sky-600 dark:text-sky-400 text-[11px] font-bold uppercase tracking-wider block mb-1">HEADQUARTERS
+                  &bull; TAMIL NADU</span>
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Allen Group</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm">Institutional Smart Card Telephony
+                  Solutions</p>
+              </div>
+
+              <div class="space-y-4 text-xs sm:text-sm">
+                <div class="flex items-start gap-3">
+                  <span class="text-lg">📍</span>
+                  <div>
+                    <strong class="text-slate-900 dark:text-white block font-semibold">Head Office Address:</strong>
+                    <span class="text-slate-600 dark:text-slate-400">L-69, Housing Unit, Manickampalayam,<br>Erode -
+                      638011, Tamil Nadu, India.</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="text-lg">📞</span>
+                  <div>
+                    <strong class="text-slate-900 dark:text-white block font-semibold">Direct Helplines:</strong>
+                    <span class="text-slate-600 dark:text-slate-400">
+                      <a href="tel:+918098207999" class="text-sky-600 dark:text-sky-400 hover:underline">+91-80982
+                        07999</a> /
+                      <a href="tel:+919655807999" class="text-sky-600 dark:text-sky-400 hover:underline">+91-96558
+                        07999</a><br>
+                      <span>Landline: </span><a href="tel:04242411004"
+                        class="text-sky-600 dark:text-sky-400 hover:underline">0424 - 2411004</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="text-lg">✉️</span>
+                  <div>
+                    <strong class="text-slate-900 dark:text-white block font-semibold">Official Email:</strong>
+                    <a href="mailto:info@allengroups.com"
+                      class="text-sky-600 dark:text-sky-400 hover:underline">info@allengroups.com</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="text-lg">⚡</span>
+                  <div>
+                    <strong class="text-slate-900 dark:text-white block font-semibold">Online Recharge Portal:</strong>
+                    <a href="https://allengroups.net/online-recharge/" target="_blank" rel="noopener noreferrer"
+                      class="text-sky-600 dark:text-sky-400 hover:underline">https://allengroups.net/online-recharge/</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/918098207999?text=Hello%20Allen%20Group,%20we%20want%20to%20inquire%20about%20installing%20Smart%20Card%20Pay%20Phones%20in%20our%20Institution"
+              target="_blank" rel="noopener noreferrer"
+              class="mt-8 bg-[#25d366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm shadow-lg shadow-emerald-900/20 transition-all">
+              <span>💬</span> Chat with Us on WhatsApp (+91 80982 07999)
+            </a>
+          </div>
+
+          <!-- Institutional Inquiry Form -->
+          <div
+            class="lg:col-span-7 bg-white border border-slate-200 shadow-xl dark:bg-slate-900/70 dark:border-slate-800 rounded-3xl p-7 sm:p-9 backdrop-blur-xl transition-colors">
+            <form id="contactForm" novalidate class="space-y-4">
+              <div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Book Free On-Site Survey</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm">Our team will contact you within 4
+                  business hours.</p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bf-field">
+                  <label for="name" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Your
+                    Name *</label>
+                  <input type="text" id="name" name="name" required placeholder="Principal / Administrator Name"
+                    class="w-full bg-slate-50 border border-slate-300 text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-sky-500 dark:bg-slate-950/80 dark:border-slate-700/80 dark:text-white dark:focus:border-sky-500 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm outline-none transition-colors">
+                  <span class="bf-error text-[11px] text-rose-500 dark:text-rose-400 block min-h-[14px]"></span>
+                </div>
+
+                <div class="bf-field">
+                  <label for="email"
+                    class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Official Email *</label>
+                  <input type="email" id="email" name="email" required placeholder="admin@school.edu.in"
+                    class="w-full bg-slate-50 border border-slate-300 text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-sky-500 dark:bg-slate-950/80 dark:border-slate-700/80 dark:text-white dark:focus:border-sky-500 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm outline-none transition-colors">
+                  <span class="bf-error text-[11px] text-rose-500 dark:text-rose-400 block min-h-[14px]"></span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bf-field">
+                  <label for="institution"
+                    class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">School / Institution
+                    Name *</label>
+                  <input type="text" id="institution" name="institution" required
+                    placeholder="e.g. St. Xavier Residential School"
+                    class="w-full bg-slate-50 border border-slate-300 text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-sky-500 dark:bg-slate-950/80 dark:border-slate-700/80 dark:text-white dark:focus:border-sky-500 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm outline-none transition-colors">
+                  <span class="bf-error text-[11px] text-rose-500 dark:text-rose-400 block min-h-[14px]"></span>
+                </div>
+
+                <div class="bf-field">
+                  <label for="phone" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Phone /
+                    WhatsApp *</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210"
+                    class="w-full bg-slate-50 border border-slate-300 text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-sky-500 dark:bg-slate-950/80 dark:border-slate-700/80 dark:text-white dark:focus:border-sky-500 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm outline-none transition-colors">
+                  <span class="bf-error text-[11px] text-rose-500 dark:text-rose-400 block min-h-[14px]"></span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bf-field">
+                  <label for="city" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">City
+                    &amp; State</label>
+                  <input type="text" id="city" name="city" placeholder="e.g. Erode, Tamil Nadu"
+                    class="w-full bg-slate-50 border border-slate-300 text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-sky-500 dark:bg-slate-950/80 dark:border-slate-700/80 dark:text-white dark:focus:border-sky-500 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm outline-none transition-colors">
+                </div>
+
+                <div class="bf-field">
+                  <label for="studentStrength"
+                    class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Hostel Student
+                    Strength</label>
+                  <select id="studentStrength" name="studentStrength"
+                    class="w-full bg-slate-50 border border-slate-300 text-slate-900 focus:bg-white focus:border-sky-500 dark:bg-slate-950/80 dark:border-slate-700/80 dark:text-white dark:focus:border-sky-500 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm outline-none transition-colors">
+                    <option value="50-200">50 – 200 Students</option>
+                    <option value="200-500" selected>200 – 500 Students</option>
+                    <option value="500-1000">500 – 1,000 Students</option>
+                    <option value="1000+">1,000+ Students</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="bf-field">
+                <label for="message" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Campus
+                  Requirements / Notes</label>
+                <textarea id="message" name="message" rows="3"
+                  placeholder="Tell us about your hostel blocks or campus requirements..."
+                  class="w-full bg-slate-50 border border-slate-300 text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-sky-500 dark:bg-slate-950/80 dark:border-slate-700/80 dark:text-white dark:focus:border-sky-500 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm outline-none transition-colors"></textarea>
+              </div>
+
+              <button type="submit"
+                class="w-full bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-slate-950 font-extrabold py-3.5 px-6 rounded-xl text-xs sm:text-sm uppercase tracking-wider shadow-xl shadow-sky-500/25 transition-all">
+                Submit Request for Free Campus Survey
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== MODERN FOOTER ==================== -->
+  <footer
+    class="bg-slate-100 border-t border-slate-200 text-slate-600 dark:bg-slate-950 dark:border-slate-800 dark:text-slate-400 pt-16 pb-8 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-200 dark:border-slate-800/80">
+
+        <!-- Brand Summary -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="#home">
+            <div class="inline-block px-3 py-1.5 rounded-xl bg-transparent dark:bg-white dark:shadow-md transition-all">
+              <img src="images/logo.png" alt="Allen Group Official Logo" class="h-8 sm:h-9 w-auto object-contain">
+            </div>
+          </a>
+          <p class="text-xs sm:text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+            India's pioneer institutional system integrator of 5G &amp; VoLTE Smart Card Pay Phone communication systems
+            for boarding schools, residential campuses, and hostels.
+          </p>
+          <div class="flex flex-wrap gap-2 text-[11px] font-bold">
+            <span
+              class="bg-white border border-slate-300 text-sky-600 dark:bg-slate-900 dark:border-slate-800 dark:text-sky-400 px-2.5 py-1 rounded-full shadow-sm">Make
+              in India</span>
+            <span
+              class="bg-white border border-slate-300 text-emerald-600 dark:bg-slate-900 dark:border-slate-800 dark:text-emerald-400 px-2.5 py-1 rounded-full shadow-sm">ISO
+              Certified</span>
+            <span
+              class="bg-white border border-slate-300 text-amber-600 dark:bg-slate-900 dark:border-slate-800 dark:text-amber-400 px-2.5 py-1 rounded-full shadow-sm">Zero
+              Capex Model</span>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-rose-50/80 border border-rose-200 dark:bg-rose-950/30 dark:border-rose-900/60 text-xs font-bold text-slate-800 dark:text-slate-200 shadow-sm">
+            <span>Proudly Made In India, Made For The World</span>
+            <span class="text-rose-500 text-sm">❤️</span>
+          </div>
+        </div>
+
+        <!-- Solutions -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-slate-900 dark:text-white font-bold text-sm tracking-wide">Solutions</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Next-Gen 5G Calling
+                Terminals</a></li>
+            <li><a href="#gallery" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Multi-Line 5G
+                Stations</a></li>
+            <li><a href="#smart-cards" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Reusable
+                Smart IC Cards</a></li>
+            <li><a href="#comparison" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Parent
+                Whitelist Engine</a></li>
+            <li><a href="https://allengroups.net/online-recharge/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors text-sky-600 dark:text-sky-400 font-semibold">Online
+                Recharge Portal</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Nav -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-slate-900 dark:text-white font-bold text-sm tracking-wide">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Home</a></li>
+            <li><a href="#ecosystem" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Institutional
+                Ecosystem</a></li>
+            <li><a href="#comparison" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Benchmark
+                Infographic</a></li>
+            <li><a href="#smart-cards" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Reusable
+                Smart IC Cards</a></li>
+            <li><a href="#calculator" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Campus
+                Capacity Sizing</a></li>
+            <li><a href="#gallery" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Installation
+                Gallery</a></li>
+            <li><a href="#faq" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Frequently Asked
+                Questions</a></li>
+            <li><a href="#contact" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Request Free
+                Campus Survey</a></li>
+          </ul>
+        </div>
+
+        <!-- Head Office -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-slate-900 dark:text-white font-bold text-sm tracking-wide">Head Office</h4>
+          <p class="text-xs leading-relaxed text-slate-600 dark:text-slate-400">
+            <strong>Allen Group</strong><br>
+            L-69, Housing Unit, Manickampalayam,<br>
+            Erode - 638011, Tamil Nadu, India.
+          </p>
+          <p class="text-xs leading-relaxed text-slate-600 dark:text-slate-400">
+            <strong>Phone:</strong> <a href="tel:+918098207999"
+              class="text-sky-600 dark:text-sky-400 hover:underline">+91-80982 07999</a><br>
+            <strong>Landline:</strong> <a href="tel:04242411004"
+              class="text-sky-600 dark:text-sky-400 hover:underline">0424 - 2411004</a><br>
+            <strong>Email:</strong> <a href="mailto:info@allengroups.com"
+              class="text-sky-600 dark:text-sky-400 hover:underline">info@allengroups.com</a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Footer Sub Bottom -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <div>&copy; <span id="currentYear">2026</span> Allen Group. All Rights Reserved.</div>
+        <div class="text-slate-700 dark:text-slate-300 font-semibold">Developed by <strong
+            class="text-sky-600 dark:text-sky-400 font-bold underline decoration-sky-400/40">Shadab Rahman</strong>
+        </div>
+        <div class="flex items-center gap-4 text-slate-500">
+          <a href="https://allengroups.net/terms-conditions/" target="_blank" rel="noopener noreferrer"
+            class="hover:text-slate-800 dark:hover:text-slate-300">Terms</a>
+          <a href="https://allengroups.net/privacy-policy/" target="_blank" rel="noopener noreferrer"
+            class="hover:text-slate-800 dark:hover:text-slate-300">Privacy Policy</a>
+          <a href="https://allengroups.net/online-recharge/" target="_blank" rel="noopener noreferrer"
+            class="hover:text-slate-800 dark:hover:text-slate-300">Recharges</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-950 flex items-center justify-center shadow-xl opacity-0 invisible transition-all transform hover:-translate-y-1"
+    aria-label="Back to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <!-- LIGHTBOX MODAL (FOR IMAGES & COMPARE.PNG) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button
+      class="absolute top-5 right-5 text-white/80 hover:text-white bg-slate-900/80 hover:bg-slate-800 w-11 h-11 rounded-full text-2xl flex items-center justify-center transition-colors"
+      id="lightboxClose" aria-label="Close viewer">&times;</button>
+    <button
+      class="absolute left-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white bg-slate-900/80 hover:bg-slate-800 w-11 h-11 rounded-full text-2xl flex items-center justify-center transition-colors"
+      id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+    <button
+      class="absolute right-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white bg-slate-900/80 hover:bg-slate-800 w-11 h-11 rounded-full text-2xl flex items-center justify-center transition-colors"
+      id="lightboxNext" aria-label="Next image">&#8250;</button>
+
+    <div
+      class="max-w-5xl w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-3xl overflow-hidden shadow-2xl">
+      <img src="" alt="" id="lightboxImg" class="max-h-[75vh] w-auto mx-auto object-contain block">
+      <div
+        class="bg-slate-100 dark:bg-slate-900 px-6 py-4 flex justify-between items-center text-xs text-slate-700 dark:text-slate-300 border-t border-slate-200 dark:border-slate-800">
+        <span id="lightboxCaptionTitle" class="font-bold text-slate-900 dark:text-white text-sm">Image Preview</span>
+        <span id="lightboxCaptionCounter" class="font-mono text-slate-500 dark:text-slate-400">1 / 1</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- HIDDEN GOOGLE TRANSLATE ENGINE (Hidden offscreen - drives custom language dropdown) -->
+  <div id="google_translate_element" class="hidden-google-translate" aria-hidden="true"></div>
+
+  <!-- GOOGLE TRANSLATE SCRIPT -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Main JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+
+</html>

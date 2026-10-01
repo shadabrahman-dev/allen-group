@@ -1,0 +1,353 @@
+/* ============================================================
+   ALLEN GROUP — Next-Gen Institutional Telephony Design System
+   Tailwind CSS Companion Stylesheet (Dual Theme & Polish)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+/* Global Reset & Base */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Ambient Animated Mesh Gradient Blobs */
+.mesh-background {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.85;
+  transition: opacity 0.4s ease;
+}
+
+.mesh-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  will-change: transform;
+}
+
+/* Dark Mode Mesh Blobs */
+html.dark .blob-1 {
+  top: -10%;
+  left: 15%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, transparent 70%);
+  animation: floatBlob1 18s ease-in-out infinite alternate;
+}
+
+html.dark .blob-2 {
+  top: 40%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(52, 211, 153, 0.14) 0%, transparent 70%);
+  animation: floatBlob2 22s ease-in-out infinite alternate;
+}
+
+html.dark .blob-3 {
+  bottom: 10%;
+  left: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.12) 0%, transparent 70%);
+  animation: floatBlob1 25s ease-in-out infinite alternate-reverse;
+}
+
+/* Light Mode Mesh Blobs (Soft, clean, airy pastel glows) */
+html:not(.dark) .blob-1 {
+  top: -10%;
+  left: 15%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, transparent 70%);
+  animation: floatBlob1 18s ease-in-out infinite alternate;
+}
+
+html:not(.dark) .blob-2 {
+  top: 40%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.10) 0%, transparent 70%);
+  animation: floatBlob2 22s ease-in-out infinite alternate;
+}
+
+html:not(.dark) .blob-3 {
+  bottom: 10%;
+  left: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+  animation: floatBlob1 25s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatBlob1 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(70px, 90px) scale(1.12); }
+}
+
+@keyframes floatBlob2 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-80px, -50px) scale(1.08); }
+}
+
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #0ea5e9, #10b981, #8b5cf6);
+  z-index: 100000;
+  transition: width 0.08s linear;
+}
+
+
+
+/* ============================================================
+   HIDE GOOGLE TRANSLATE DEFAULT WIDGETS & BANNERS ENTIRELY
+   ============================================================ */
+.hidden-google-translate {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}
+
+/* Hide Google's top bar, popups, and iframe artifacts */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-te-balloon-frame {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  opacity: 0 !important;
+}
+
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+.skiptranslate:not(.keep-skiptranslate) {
+  display: none !important;
+}
+
+/* Eliminate highlight yellow background on translated text */
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Custom scrollbar for custom language dropdown */
+#customLangDropdown::-webkit-scrollbar {
+  width: 5px;
+}
+#customLangDropdown::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.4);
+  border-radius: 9999px;
+}
+
+/* Custom Range Slider */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 9999px;
+  height: 6px;
+  outline: none;
+}
+
+html.dark input[type=range] {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+html:not(.dark) input[type=range] {
+  background: #e2e8f0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0ea5e9;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.5);
+  border: 2px solid #fff;
+  transition: transform 0.15s ease;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Lightbox Modal */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: rgba(5, 11, 20, 0.94);
+  backdrop-filter: blur(16px);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+html.dark .toast {
+  background: #09172a;
+  color: #fff;
+  border: 1px solid #38bdf8;
+}
+
+html:not(.dark) .toast {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #0ea5e9;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.toast.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Scroll reveal helper */
+.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-stagger {
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal { transform: translateY(24px); }
+.reveal-left { transform: translateX(-24px); }
+.reveal-right { transform: translateX(24px); }
+.reveal-scale { transform: scale(0.96); }
+.reveal-stagger { transform: translateY(20px); }
+
+.revealed {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-stagger {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .mesh-blob { display: none; }
+}
+
+/* ============================================================
+   GOOGLE TRANSLATE HIDING & CUSTOM DROPDOWN STYLING
+   Google Translate widget, banners, and tooltips are strictly
+   suppressed behind the page.
+   ============================================================ */
+
+/* Position Google Translate element completely offscreen in background */
+.hidden-google-translate,
+#google_translate_element {
+  position: fixed !important;
+  top: -2000px !important;
+  left: -2000px !important;
+  opacity: 0.01 !important;
+  z-index: -9999 !important;
+}
+
+/* Suppress Google Translate top banner frame & prevent body shift */
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+body.goog-te-banner-frame {
+  top: 0px !important;
+  margin-top: 0px !important;
+}
+
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-te-balloon-frame {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Remove Google text highlighting and font alterations */
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+font {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Custom Language Dropdown Scrollbar */
+#customLangDropdown::-webkit-scrollbar {
+  width: 5px;
+}
+#customLangDropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+#customLangDropdown::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+html.dark #customLangDropdown::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+}
