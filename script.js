@@ -84,10 +84,10 @@
   })();
 
   /* ============================================================
-     1. THEME TOGGLE (DARK / LIGHT WITH TAILWIND)
+     1. THEME TOGGLE (DEFAULT LIGHT THEME, USER PERSISTED)
      ============================================================ */
   const ThemeManager = (() => {
-    const STORAGE_KEY = "allen-site-theme";
+    const STORAGE_KEY = "allen-site-theme-v2";
     const root = document.documentElement;
     const toggleBtn = $("#themeToggle");
 
@@ -108,8 +108,9 @@
 
     function init() {
       const saved = localStorage.getItem(STORAGE_KEY);
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      const theme = saved || (prefersDark ? "dark" : "dark"); // Default dark for ultra modern aesthetic
+      // User specified requirement: Default MUST be light theme first!
+      // Only switch to dark if the user explicitly clicked the toggle.
+      const theme = saved === "dark" ? "dark" : "light";
       apply(theme);
 
       if (toggleBtn) {
@@ -552,7 +553,7 @@
   }
 
   /* ============================================================
-     8. GALLERY LIGHTBOX & COMPARE INFOGRAPHIC FULLSCREEN
+     8. GALLERY LIGHTBOX & BROCHURE FULLSCREEN VIEWER
      ============================================================ */
   function initGalleryLightbox() {
     const lightbox = $("#lightbox");
@@ -569,8 +570,8 @@
     let items = cards.map((c) => {
       const img = c.querySelector("img");
       return {
-        src: img ? img.src : "",
-        caption: c.getAttribute("data-caption") || "Installation Photo",
+        src: c.getAttribute("data-img-src") || (img ? img.getAttribute("src") : ""),
+        caption: c.getAttribute("data-caption") || "Allen Group Official Literature",
       };
     });
 
@@ -604,6 +605,20 @@
 
     cards.forEach((c, i) => {
       c.addEventListener("click", () => open(i));
+    });
+
+    // Support external triggers such as "Inspect Full-Size Brochure" buttons
+    $$("[data-open-brochure]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const targetSrc = btn.getAttribute("data-open-brochure");
+        const idx = items.findIndex((it) => it.src && it.src.includes(targetSrc));
+        if (idx !== -1) {
+          open(idx);
+        } else if (items.length > 0) {
+          open(0);
+        }
+      });
     });
 
     if (closeBtn) closeBtn.addEventListener("click", close);
@@ -715,6 +730,31 @@
   }
 
   /* ============================================================
+     12. BROCHURE CHECKLIST EQUAL HEIGHT SYNC
+     ============================================================ */
+  function syncBrochureHeights() {
+    const boxes = $$(".brochure-checklist-box");
+    if (boxes.length < 2) return;
+
+    // Reset inline minHeight to accurately measure natural heights
+    boxes.forEach((b) => (b.style.minHeight = ""));
+
+    // When displayed side-by-side on desktop/laptop (>= 1024px)
+    if (window.innerWidth >= 1024) {
+      let maxH = 0;
+      boxes.forEach((b) => {
+        const h = b.getBoundingClientRect().height;
+        if (h > maxH) maxH = h;
+      });
+      if (maxH > 0) {
+        boxes.forEach((b) => {
+          b.style.minHeight = Math.ceil(maxH) + "px";
+        });
+      }
+    }
+  }
+
+  /* ============================================================
      INITIALIZATION
      ============================================================ */
   function start() {
@@ -728,6 +768,10 @@
     initFaq();
     initContactForm();
     initYear();
+    syncBrochureHeights();
+
+    window.addEventListener("resize", syncBrochureHeights, { passive: true });
+    window.addEventListener("load", syncBrochureHeights);
   }
 
   if (document.readyState === "loading") {
